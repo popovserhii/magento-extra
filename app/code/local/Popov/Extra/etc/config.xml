@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Popov_Extra>
+			<version>0.1.0</version>
+		</Popov_Extra>
+	</modules>
+
+	<adminhtml>
+		<translate>
+			<modules>
+				<Popov_Extra>
+					<files>
+						<default>Popov_Extra.csv</default>
+					</files>
+				</Popov_Extra>
+			</modules>
+		</translate>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<popov_extra translate="title" module="popov_extra">
+											<title>Extra Info</title>
+										</popov_extra>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+
+    <frontend>
+        <layout>
+            <updates>
+                <popov_extra>
+                    <file>popov/extra.xml</file>
+                </popov_extra>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Popov_Extra>
+                    <files>
+                        <default>Popov_Extra.csv</default>
+                    </files>
+                </Popov_Extra>
+            </modules>
+        </translate>
+    </frontend>
+    
+	<global>
+		<models>
+			<popov_extra>
+				<class>Popov_Extra_Model</class>
+			</popov_extra>
+			<!--<cms>
+				<rewrite>
+					<template_filter>Popov_Extra_Model_Template_Filter</template_filter>
+				</rewrite>
+			</cms>-->
+		</models>
+		<helpers>
+			<popov_extra>
+				<class>Popov_Extra_Helper</class>
+			</popov_extra>
+		</helpers>
+	</global>
+
+	<!--<default>
+		<popov_extra>
+			<mail_notification>
+				<enabled>0</enabled>
+				<recipient_email><![CDATA[hello@example.com]]></recipient_email>
+				<sender_email_identity>custom2</sender_email_identity>
+				<email_template>popov_extra_mail_notification_email_template</email_template>
+			</mail_notification>
+		</popov_extra>
+	</default>-->
+
+	<!--<frontend>
+		<routers>
+			<popov_extra>
+				<use>standard</use>
+				<args>
+					<module>Popov_Extra</module>
+					<frontName>magmi</frontName>
+				</args>
+			</popov_extra>
+		</routers>
+	</frontend>-->
+</config>

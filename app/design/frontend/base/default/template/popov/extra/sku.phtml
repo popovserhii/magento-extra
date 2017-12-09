@@ -1,0 +1,9 @@
+<?php die(__FILE__) ?>
+<div>Hello World</div>
+
+<?php $product = $this->getProduct() ?>
+<div class="product-sku-wrap">
+	<div class="product-sku-box inline">
+		<?= $this->translate('Article') ?>: <span class="product-sku"><?= $product->getSku() ?></span>
+	</div>
+</div>

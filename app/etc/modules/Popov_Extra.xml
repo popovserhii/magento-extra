@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Popov_Extra>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Catalog />
+            </depends>
+        </Popov_Extra>
+    </modules>
+</config>
