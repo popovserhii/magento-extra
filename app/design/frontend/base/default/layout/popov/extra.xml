@@ -5,8 +5,7 @@
             <action method="addItem"><type>skin_css</type><name>popov/css/extra.css</name></action>
         </reference>
         <reference name="product.info.extrahint">
-            <!--ifconfig="popov_magmi/extra/show_sku_on_product_page"-->
-            <block type="core/template" name="product.info.sku" template="popov/extra/sku.phtml" />
+            <block type="core/template" name="product.info.sku" template="popov/extra/sku.phtml" ifconfig="popov_extra/extra/show_sku_on_product_page" />
         </reference>
     </catalog_product_view>
 </layout>

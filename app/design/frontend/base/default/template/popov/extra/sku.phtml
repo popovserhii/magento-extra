@@ -1,9 +1,11 @@
-<?php die(__FILE__) ?>
-<div>Hello World</div>
-
-<?php $product = $this->getProduct() ?>
+<?php
+/**
+ * @var Mage_Core_Block_Template $this
+ */
+?>
+<?php $product = Mage::registry('current_product'); ?>
 <div class="product-sku-wrap">
 	<div class="product-sku-box inline">
-		<?= $this->translate('Article') ?>: <span class="product-sku"><?= $product->getSku() ?></span>
+		<?= $this->__('Article') ?>: <span class="product-sku"><?= $product->getSku() ?></span>
 	</div>
 </div>

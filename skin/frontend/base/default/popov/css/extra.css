@@ -1,4 +1,4 @@
 .inline {display:inline-block}
-.product-sku-wrap {width:180px;right:0;padding-bottom:6px}
+.product-sku-wrap {/*width:180px;*/right:0;padding-bottom:6px}
 .product-sku-box {color: #999;padding: 0.38462em 0.76923em;background-color: #fff3b5;font-size: 1.3rem;}
 .product-sku {color: #333;font-size: 1.3rem;font-weight: bold;margin-left: 6px;}
