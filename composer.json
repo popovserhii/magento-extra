@@ -1,0 +1,15 @@
+{
+    "name": "popov/magento-extra",
+    "type": "magento-module",
+    "license":"MIT Licence",
+    "description":"Adding extra information like sku and etc. without override core or theme template",
+    "authors":[{
+        "name":"Serhii Popov",
+        "email":"popovserhii@gmail.com"
+    }],
+    "extra": {
+        "map": [
+          ["app/etc/modules/Popov_Extra.xml", "app/etc/modules/Popov_Extra.xml"]
+        ]
+    }
+}
